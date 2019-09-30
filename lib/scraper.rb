@@ -25,6 +25,10 @@ end
     Course.all.each do |course|
       if course.title && course.title != ""
         puts "Title: #{course.title}"
+        puts "Schedule: #{course.schedule}"
+        puts "Description: #{course.description}"
+      end
+      
   def make_courses
   self.get_courses.each do |post|
     course = Course.new
